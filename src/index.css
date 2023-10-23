@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E4C2C6;
+}
+
+.icon{
+  font-size: large;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #E4C2C6;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+ul li{
+  float: left;
+  padding: 14px 16px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
