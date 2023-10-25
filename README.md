@@ -1,3 +1,6 @@
+https://static.vecteezy.com/system/resources/previews/015/280/706/original/3d-pink-star-icon-3d-holiday-element-png.png 
+https://coolors.co/ffeef0-fdd7db-d6adb1-654c4f
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
