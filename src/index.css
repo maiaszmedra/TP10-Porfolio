@@ -2,7 +2,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #E9CCCF;;
+  background-color: #363742;;
 }
 
 .form-group {
@@ -19,7 +19,8 @@
 
 .form-input {
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   background-color: #fff;
   color: #333;
@@ -34,7 +35,7 @@ textarea.form-input {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #E2B5BB;
+  background-color: #66717E;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -43,7 +44,7 @@ textarea.form-input {
 }
 
 .form-button:hover {
-  background-color: #E2B5BB;
+  background-color: #4B4C56;
 }
 
 
@@ -67,24 +68,23 @@ ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E6C7CA;
+  background-color: #4B4C56;
 }
 
 .icon{
   font-size: large;
   font-weight: bold;
   overflow: hidden;
-  background-color: #E6C7CA;
+  background-color: #4B4C56;
   margin-right: 20px;
   margin-left: 10px;
 }
 
 footer{
-  margin-top: auto;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
   background-color: #E4C2C6;
   color: white;
   text-align: center;

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "nombre": "Green Grin App",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
+        "imagenes": [],
+        "fecha": "Marzo 2023 - Diciembre 2023",
+        "url": "https://github.com/luliwarem/GreenGrin"
+    },
+    {
+        "id": "2",
+        "nombre": "Green Grin Web",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
+        "imagenes": [],
+        "fecha": "Marzo 2023 - Diciembre 2023",
+        "url": "https://github.com/luliwarem/GreenGrin-Web"
+    },
+    {
+        "id": "3",
+        "nombre": "Green Grin Backend",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
+        "imagenes": [],
+        "fecha": "Marzo 2023 - Diciembre 2023",
+        "url": "https://github.com/luliwarem/GreenGrin-BackEnd"
+    },
+    {
+        "id": "4",
+        "nombre": "Comidas",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
+        "imagenes": [],
+        "fecha": "Agosto 2023 - Septiembre 2023",
+        "url": "https://github.com/tamischnaiderman1/TP-Comidas"
+    },
+    {
+        "id": "5",
+        "nombre": "API Personajes",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
+        "imagenes": [],
+        "fecha": "Junio 2023 - Julio 2023",
+        "url": "https://github.com/luliwarem/TP-Personajes"
+    },
+    {
+        "id": "6",
+        "nombre": "Jugando con Banderas",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Estructuras y Funcionamiento de los Sistemas Informáticos'",
+        "imagenes": [],
+        "fecha": "Junio 2023 - Julio 2023",
+        "url": "https://github.com/maiaszmedra/TP06-JugandoConBanderas"
+    },
+    {
+        "id": "7",
+        "nombre": "Hardware",
+        "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
+        "imagenes": [],
+        "fecha": "Octubre 2023 - Diciembre 2023",
+        "url": "https://github.com/maiaszmedra/TP-Hardware"
+    }
+]

@@ -20,25 +20,21 @@ const Layout = () => {
                     </li>
                 </ul>
             </nav>
+            <Outlet />
             <footer>
                 <form class="colorful-form">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Name:</label>
-                        <input required="" placeholder="Enter your name" class="form-input" type="text"/>
-                    </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email:</label>
                         <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email"/>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="message">Message:</label>
+                        <label class="form-label" for="message">Mensaje:</label>
                         <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
                     </div>
-                    <button class="form-button" type="submit">Submit</button>
+                    <button class="form-button" type="submit">Enviar</button>
                 </form>
 
             </footer>
-            <Outlet />
 
         </>
 
