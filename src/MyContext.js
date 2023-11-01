@@ -1,20 +1,22 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import * as Creaciones from "/Creaciones.json"
 
-const ContextProvider = createContext();
+const MyContext = createContext();
 
-export function MyContext({ children }) {
+export function ContextProvider({ children }) {
 const [creaciones, setCreaciones] = useState(null);
 
 
 
 useEffect(() => {
-async function fetchData() {
+function fetchData() {
     try {
-    const response = await axios.get('Creaciones.json');
-    setCreaciones(response.data);
+    const response = Creaciones
+    setCreaciones(response);
+    console.log(response)
     } catch (error) {
-    console.error('Error fetching Pokemon data:', error);
+    console.error('Error fetching data:', error);
     }
 }
 

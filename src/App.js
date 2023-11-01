@@ -4,17 +4,16 @@ import Home from "./Home.js";
 import Info from "./Info.js";
 import Creaciones from "./Creaciones.js";
 import Favoritos from "./Favoritos.js"
-import { MyContext } from "./MyContext.js";
 import { useState } from "react";
 import './App.css';
-//import { APIContextProvider } from "./apiContext";
+import { ContextProvider } from "./MyContext.js";
 
 
 
 function App() {
   const [favoritos, setFavoritos] = useState([]);
   return (
-    <MyContext.Provider value={{ favoritos, setFavoritos }}>
+    <ContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -27,7 +26,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter >
-    </MyContext.Provider>
+    </ContextProvider>
   );
 }
 

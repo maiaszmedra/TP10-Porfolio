@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom"
-import "./Favoritos.css"
-import {useContext} from "react"
-import { MyContext } from "./MyContext";
+import "./Info.css"
+import { useCreaciones } from "./MyContext";
 
 export default function Favoritos() {
-    const {favoritos,setFavoritos}=useContext(MyContext);
+    const { data } = useCreaciones();
 
     return (
         <div className="container">
-            <p>hola</p>
+            <p>favoritos</p>
         </div>
     )
 

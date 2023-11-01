@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom"
-import "./Favoritos.css"
-import { useContext } from "react"
-import { MyContext } from "./MyContext";
-import Creaciones from "./Creaciones.json"
+import "./Info.css"
+import { useCreaciones } from "./MyContext";
 
-export default function Home() {
-    const {creaciones, setCreaciones } = useContext(MyContext);
-    setCreaciones(Creaciones)
+export default function Info() {
+    const { data } = useCreaciones();
+    console.log(data)
 
     return (
         <div className="container">
-            <p>{creaciones[1].nombre}</p>
+            <p>hola</p>
         </div>
     )
 
