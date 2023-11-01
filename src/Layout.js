@@ -22,16 +22,16 @@ const Layout = () => {
             </nav>
             <Outlet />
             <footer>
-                <form class="colorful-form">
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email:</label>
-                        <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email"/>
+                <form className="colorful-form">
+                    <div className="form-group">
+                        <label className="form-label" for="email">Email:</label>
+                        <input required="" placeholder="Enter your email" className="form-input" name="email" id="email" type="email"/>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Mensaje:</label>
-                        <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
+                    <div className="form-group">
+                        <label className="form-label" for="message">Mensaje:</label>
+                        <textarea required="" placeholder="Enter your message" className="form-input" name="message" id="message"></textarea>
                     </div>
-                    <button class="form-button" type="submit">Enviar</button>
+                    <button className="form-button" type="submit">Enviar</button>
                 </form>
 
             </footer>

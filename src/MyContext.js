@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
-import * as Creaciones from "/Creaciones.json"
+import * as Creaciones from "./Creaciones.json"
 
 const MyContext = createContext();
 
