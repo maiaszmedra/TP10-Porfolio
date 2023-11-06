@@ -3,7 +3,7 @@
         "id": "1",
         "nombre": "Green Grin App",
         "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
-        "imagenes": [],
+        "image": "https://media.istockphoto.com/id/585288480/es/foto/botella.jpg?s=612x612&w=0&k=20&c=gWwnF3zjtYU7FprXUL_sFt7pk8irjFozEd51tVVd4TA=",
         "fecha": "Marzo 2023 - Diciembre 2023",
         "url": "https://github.com/luliwarem/GreenGrin"
     },
@@ -11,7 +11,7 @@
         "id": "2",
         "nombre": "Green Grin Web",
         "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
-        "imagenes": [],
+        "image": "https://us.123rf.com/450wm/amstockphoto/amstockphoto1406/amstockphoto140600019/29269559-las-filas-de-botellas-de-agua-en-una-envoltura-de-pl%C3%A1stico.jpg?ver=6",
         "fecha": "Marzo 2023 - Diciembre 2023",
         "url": "https://github.com/luliwarem/GreenGrin-Web"
     },
@@ -19,7 +19,7 @@
         "id": "3",
         "nombre": "Green Grin Backend",
         "descripcion": "Proyecto creado en el contexto de la materia 'Proyecto Final'",
-        "imagenes": [],
+        "image": "https://www.elagoradiario.com/wp-content/uploads/2019/09/shutterstock_535807606.jpg",
         "fecha": "Marzo 2023 - Diciembre 2023",
         "url": "https://github.com/luliwarem/GreenGrin-BackEnd"
     },
@@ -27,7 +27,7 @@
         "id": "4",
         "nombre": "Comidas",
         "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
-        "imagenes": [],
+        "image": "https://i.pinimg.com/1200x/10/ba/d0/10bad0ecabda546ebbedcc372084606f.jpg",
         "fecha": "Agosto 2023 - Septiembre 2023",
         "url": "https://github.com/tamischnaiderman1/TP-Comidas"
     },
@@ -35,7 +35,7 @@
         "id": "5",
         "nombre": "API Personajes",
         "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
-        "imagenes": [],
+        "image": "https://s1.eestatic.com/2018/12/21/cultura/libros/disney-terapias-psicologia_362475695_110547965_1706x960.jpg",
         "fecha": "Junio 2023 - Julio 2023",
         "url": "https://github.com/luliwarem/TP-Personajes"
     },
@@ -43,7 +43,7 @@
         "id": "6",
         "nombre": "Jugando con Banderas",
         "descripcion": "Proyecto creado en el contexto de la materia 'Estructuras y Funcionamiento de los Sistemas Informáticos'",
-        "imagenes": [],
+        "image": "https://cdn.republica.gt/102021/1634742280994.webp?cw=698&ch=500&extw=jpg",
         "fecha": "Junio 2023 - Julio 2023",
         "url": "https://github.com/maiaszmedra/TP06-JugandoConBanderas"
     },
@@ -51,7 +51,7 @@
         "id": "7",
         "nombre": "Hardware",
         "descripcion": "Proyecto creado en el contexto de la materia 'Desarrollo de Aplicaciones Informáticas'",
-        "imagenes": [],
+        "image": "https://www.lifeder.com/wp-content/uploads/2022/02/informatica.jpg",
         "fecha": "Octubre 2023 - Diciembre 2023",
         "url": "https://github.com/maiaszmedra/TP-Hardware"
     }

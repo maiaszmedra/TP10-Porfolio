@@ -1,5 +1,6 @@
 https://static.vecteezy.com/system/resources/previews/015/280/706/original/3d-pink-star-icon-3d-holiday-element-png.png 
-https://coolors.co/ffeef0-fdd7db-d6adb1-654c4f
+
+https://coolors.co/f1f3f3-f7f2ed-fcf1e7-e7d8c9-ddc3a9-b69b7f
 
 # Getting Started with Create React App
 

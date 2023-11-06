@@ -1,23 +1,19 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
-import * as Creaciones from "./Creaciones.json"
 
 const MyContext = createContext();
 
 export function ContextProvider({ children }) {
 const [creaciones, setCreaciones] = useState(null);
 
-
-
 useEffect(() => {
-function fetchData() {
-    try {
-    const response = Creaciones
-    setCreaciones(response);
-    console.log(response)
-    } catch (error) {
-    console.error('Error fetching data:', error);
-    }
+async function fetchData() {
+try {
+const response = await axios.get('../Creaciones.json');
+setCreaciones(response.data);
+} catch (error) {
+console.error('Error fetching data:', error);
+}
 }
 
 fetchData();
@@ -25,7 +21,7 @@ fetchData();
 
 return (
 <MyContext.Provider value={{ creaciones }}>
-    {children}
+{children}
 </MyContext.Provider>
 );
 }
