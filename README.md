@@ -2,6 +2,8 @@ https://static.vecteezy.com/system/resources/previews/015/280/706/original/3d-pi
 
 https://coolors.co/f1f3f3-f7f2ed-fcf1e7-e7d8c9-ddc3a9-b69b7f
 
+https://www.freecodecamp.org/news/how-to-create-a-portfolio-website-using-html-css-javascript-and-bootstrap/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
