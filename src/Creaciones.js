@@ -12,7 +12,7 @@ export default function Info() {
     }
 
     return (
-        <div>
+        <div class="container">
             {creaciones.map((c) =>
                 <div class="card">
                     <div class="card__img">

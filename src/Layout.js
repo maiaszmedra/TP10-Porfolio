@@ -25,7 +25,7 @@ const Layout = () => {
                 <form className="colorful-form">
                     <div className="form-group">
                         <label className="form-label" for="email">Email:</label>
-                        <input required="" placeholder="Enter your email" className="form-input" name="email" id="email" type="email"/>
+                        <input required="" placeholder="Enter your email" className="form-input" name="email" id="email" type="email" />
                     </div>
                     <div className="form-group">
                         <label className="form-label" for="message">Mensaje:</label>
@@ -33,6 +33,7 @@ const Layout = () => {
                     </div>
                     <button className="form-button" type="submit">Enviar</button>
                 </form>
+                {/*fin form */}
                 
             </footer>
 
