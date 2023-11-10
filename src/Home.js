@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom"
-import "./Info.css"
+import "./Home.css"
 import { useCreaciones } from "./MyContext";
 
 export default function Home() {
     const { data } = useCreaciones();
 
     return (
-        <div className="container">
-            <p>home</p>
+        <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Maia Szmedra</h2>
+                <p class="hero_desc">Mi portfolio como estudiante de Informatica en ORT Argentina</p>
+            </div>
+            </div>
         </div>
+        </section>
     )
 
 }
