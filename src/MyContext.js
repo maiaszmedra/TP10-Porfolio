@@ -4,28 +4,45 @@ import axios from 'axios';
 const MyContext = createContext();
 
 export function ContextProvider({ children }) {
-const [creaciones, setCreaciones] = useState(null);
+    const [favoritos, setFavoritos] = useState([]);
 
-useEffect(() => {
-async function fetchData() {
-try {
-const response = await axios.get('../Creaciones.json');
-setCreaciones(response.data);
-} catch (error) {
-console.error('Error fetching data:', error);
-}
-}
+    const agregarFavorito = (proyecto) => {
+        setFavoritos([...favoritos, proyecto]);
+    };
 
-fetchData();
-}, []);
+    const eliminarFavorito = (proyecto) => {
+        setFavoritos((prevFavoritos) =>
+            prevFavoritos.filter((favorito) => favorito.id !== proyecto.id)
+        );
+    }
+    const [creaciones, setCreaciones] = useState(null);
 
-return (
-<MyContext.Provider value={{ creaciones }}>
-{children}
-</MyContext.Provider>
-);
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await axios.get('../Creaciones.json');
+                setCreaciones(response.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        fetchData();
+    }, []);
+
+    return (
+        <MyContext.Provider 
+        value={{
+            creaciones, 
+            favoritos,
+            agregarFavorito,
+            eliminarFavorito,
+        }}>
+            {children}
+        </MyContext.Provider>
+    );
 }
 
 export function useCreaciones() {
-return useContext(MyContext);
+    return useContext(MyContext);
 }

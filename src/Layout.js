@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import "./index.css"
 
 const Layout = () => {
     return (
@@ -20,7 +21,7 @@ const Layout = () => {
                     </li>
                 </ul>
             </nav>
-            <Outlet />
+            <Outlet className="outlet"/>
             <footer>
                 <form className="colorful-form">
                     <div className="form-group">

@@ -2,7 +2,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #E7D8C9;;
+  background-color: #546901;;
 }
 
 .form-group {
@@ -35,7 +35,7 @@ textarea.form-input {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #DDC3A9;
+  background-color: #aabd5e;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -44,7 +44,7 @@ textarea.form-input {
 }
 
 .form-button:hover {
-  background-color: #B69B7F;
+  background-color: #7e9e02;
 }
 
 
@@ -69,14 +69,13 @@ ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E7D8C9;
+  background-color: #bdced7;
 }
 
 .icon{
   font-size: large;
   font-weight: bold;
   overflow: hidden;
-  background-color: #E7D8C9;
   margin-right: 20px;
   margin-left: 10px;
 }
@@ -85,7 +84,7 @@ ul{
 footer{
   bottom:0;
   width:100%;
-  background-color: #E7D8C9;
+  background-color: #546901;
   color: white;
   text-align: center;
   left: 0;
@@ -101,3 +100,7 @@ a{
   text-decoration: none;
 }
 
+.outlet{
+  margin-top: 500px;
+  margin-bottom: 500px;
+}
