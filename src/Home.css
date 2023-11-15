@@ -7,10 +7,10 @@
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
-    text-shadow: #4a1734 1px 0 10px;
+    text-shadow: #360420 1px 0 10px;
 }
 .hero_desc {
-    text-shadow: #4a1734 1px 0 10px;
+    text-shadow: #360420 2px 2px 5px;
     font-size: 2rem;
 }
 .hero-text {

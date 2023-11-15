@@ -7,12 +7,13 @@ import Favoritos from "./Favoritos.js"
 import { useState } from "react";
 import './App.css';
 import { ContextProvider } from "./MyContext.js";
+import { ContextFavoritosProvider} from "./ContextFavoritos"
 
 
 
 function App() {
-  const [favoritos, setFavoritos] = useState([]);
   return (
+    <ContextFavoritosProvider>
     <ContextProvider>
       <BrowserRouter>
         <Routes>
@@ -27,6 +28,7 @@ function App() {
         </Routes>
       </BrowserRouter >
     </ContextProvider>
+    </ContextFavoritosProvider>
   );
 }
 
