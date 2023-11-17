@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom"
 import "./Info.css"
-import { useCreaciones } from "./MyContext";
 
 export default function Info() {
-    const { data } = useCreaciones();
-
     return (
-        <div className="container">
-            <p>hola</p>
+        <div class="cardInfo">
+            <div class="imgbox">
+                <div class="img">
+                    <img src="../yo.jpg" class="img" />
+                </div>
+            </div>
+            <div class="details">
+                <h2 class="title">John Doe</h2>
+                <span class="caption">Developer</span>
+            </div>
         </div>
     )
 
