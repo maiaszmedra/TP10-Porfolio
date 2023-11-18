@@ -6,42 +6,48 @@ import { useCreaciones } from "./MyContext";
 export default function Favoritos() {
     const { favoritos, agregarFavorito, eliminarFavorito } = useFavoritos();
 
-    function doalert(event,creacion) {
+    function doalert(event, creacion) {
         console.log(event, creacion);
         if (event.target.checked) {
             agregarFavorito(creacion);
             console.log("se agrego");
         } else {
             eliminarFavorito(creacion);
-            console.log("zorcó")
+            console.log("zorcó");
         }
-      }
+    }
 
 
-    if (!favoritos) {
-        return <div>
-             <p>Aquí aparecerán tus creaciones favoritas</p>
-            </div>;
+    if (!favoritos[0]) {
+        return <div class="infoContainer">
+            <div class="info">
+            <div class="info__icon">
+                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m12 1.5c-5.79844 0-10.5 4.70156-10.5 10.5 0 5.7984 4.70156 10.5 10.5 10.5 5.7984 0 10.5-4.7016 10.5-10.5 0-5.79844-4.7016-10.5-10.5-10.5zm.75 15.5625c0 .1031-.0844.1875-.1875.1875h-1.125c-.1031 0-.1875-.0844-.1875-.1875v-6.375c0-.1031.0844-.1875.1875-.1875h1.125c.1031 0 .1875.0844.1875.1875zm-.75-8.0625c-.2944-.00601-.5747-.12718-.7808-.3375-.206-.21032-.3215-.49305-.3215-.7875s.1155-.57718.3215-.7875c.2061-.21032.4864-.33149.7808-.3375.2944.00601.5747.12718.7808.3375.206.21032.3215.49305.3215.7875s-.1155.57718-.3215.7875c-.2061.21032-.4864.33149-.7808.3375z" fill="#393a37"></path></svg>
+            </div>
+            <div class="info__title">Aquí aparecerán tus proyectos favoritos!</div>
+            </div>
+        </div>;
     }
 
     return (
         <div>
+            {console.log(favoritos)}
             <div className="container">
                 {favoritos.map((c) =>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src={c.image} class="card__img" /></div>
-                        <div class="card__descr-wrapper">
-                            <p class="card__title">
+                    <div class="fcard">
+                        <div class="fcard__img">
+                            <img src={c.image} class="fcard__img" /></div>
+                        <div class="fcard__descr-wrapper">
+                            <p class="fcard__title">
                                 {c.nombre}
                             </p>
-                            <p class="card__descr">
+                            <p class="fcard__descr">
                                 {c.descripcion}
                             </p>
-                            <div class="card__links">
+                            <div class="fcard__links">
                                 <div>
                                     <div class="heart-container" title="Like">
-                                        <input type="checkbox" name="checkfield" class="checkbox" id={c.id}  onChange={(event) => doalert(event,c)}/>
+                                        <input type="checkbox" name="checkfield" checked class="checkbox" id={c.id} onChange={(event) => doalert(event, c)} />
                                         <div class="svg-container">
                                             <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
