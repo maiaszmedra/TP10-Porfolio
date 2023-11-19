@@ -82,7 +82,7 @@
   
   
   .heart-container {
-    --heart-color: rgb(255, 91, 137);
+    --heart-color: #ff5b89;
     position: relative;
     width: 35px;
     height: 35px;
