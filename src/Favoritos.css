@@ -183,7 +183,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    background: #D7F1FD;
+    background: #DFB5C7;
     border-radius: 8px;
     box-shadow: 0px 0px 5px -3px #111;
   }
@@ -196,13 +196,13 @@
   }
   
   .info__icon path {
-    fill: #509AF8;
+    fill: #CE6391;
   }
   
   .info__title {
     font-weight: 500;
     font-size: 14px;
-    color: #0C2A75;
+    color: #CE6391;
   }
   
   .info__close {
@@ -212,6 +212,3 @@
     margin-left: auto;
   }
   
-  .info__close path {
-    fill: #0C2A75;
-  }
