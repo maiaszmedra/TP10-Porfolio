@@ -4,7 +4,6 @@ const ContextFavoritos = createContext();
 
 export function ContextFavoritosProvider({ children }) {
     const [favoritos, setFavoritos] = useState([]);
-
     const agregarFavorito = (proyecto) => {
         setFavoritos([...favoritos, proyecto]);
     };
@@ -16,9 +15,10 @@ export function ContextFavoritosProvider({ children }) {
     }
 
     useEffect(() => {
-        // storing input name
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
+        setFavoritos(localStorage.getItem("favoritos"));
     }, [favoritos]);
+
 
     return (
         <ContextFavoritos.Provider
