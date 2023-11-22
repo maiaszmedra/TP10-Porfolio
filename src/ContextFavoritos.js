@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ContextFavoritos = createContext();
 
@@ -15,13 +15,18 @@ export function ContextFavoritosProvider({ children }) {
         );
     }
 
+    useEffect(() => {
+        // storing input name
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    }, [favoritos]);
+
     return (
-        <ContextFavoritos.Provider 
-        value={{
-            favoritos,
-            agregarFavorito,
-            eliminarFavorito,
-        }}>
+        <ContextFavoritos.Provider
+            value={{
+                favoritos,
+                agregarFavorito,
+                eliminarFavorito,
+            }}>
             {children}
         </ContextFavoritos.Provider>
     );
