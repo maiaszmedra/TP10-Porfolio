@@ -5,13 +5,6 @@ import { useEffect, useState } from "react";
 export default function Favoritos() {
     const { favoritos, agregarFavorito, eliminarFavorito } = useFavoritos();
 
-    /*const [favoritos, setFavoritos] = useState([localStorage.getItem("favoritos")]);
-    console.log(favoritos);
-
-    useEffect(() => {
-        localStorage.getItem("favoritos");
-    },);*/
-
     function doalert(event, creacion) {
         console.log(event, creacion);
         if (event.target.checked) {

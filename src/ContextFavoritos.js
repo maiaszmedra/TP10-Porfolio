@@ -16,7 +16,6 @@ export function ContextFavoritosProvider({ children }) {
 
     useEffect(() => {
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        setFavoritos(localStorage.getItem("favoritos"));
     }, [favoritos]);
 
 
