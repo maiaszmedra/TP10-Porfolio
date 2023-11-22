@@ -1,7 +1,9 @@
 import { Link, Outlet } from "react-router-dom";
 import "./index.css"
-
+import Badge from '@mui/material/Badge';
+import { useFavoritos } from "./ContextFavoritos";
 const Layout = () => {
+    const { favoritos } = useFavoritos();
     return (
         <>
             <nav>
@@ -19,11 +21,14 @@ const Layout = () => {
                     <li>
                         <Link to="/favoritos"> Favoritos</Link>
                     </li>
-                    <li style={{ marginLeft: "auto" }}>
+                    <li style={{ marginLeft: "auto", marginRight: "15px" }}>
                         <div class="favoritos">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff5b89" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                            </svg>
+                            <Badge badgeContent={favoritos.length} color="primary" marginLeft="5px">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff5b89" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                </svg>
+                            </Badge>
+
                         </div>
                     </li>
                 </ul>
